@@ -59,6 +59,19 @@
         height: 100px;
     }
 
+    .tf__breadcrumb .container::after {
+        top: -155px;
+    }
+
+    .tf__faq_page::after {
+        top: 150px !important;
+    }
+
+    .tf__faq_page::before {
+        right: 3%;
+    }
+
+
 }
 
 
@@ -193,6 +206,14 @@
         right: 0;
     }
 
+    .tf__faq_page::after {
+        top: 150px !important;
+    }
+
+    .tf__faq_page::before {
+        right: 92%;
+    }
+
     /*==================================
         HOME PAGE END
     ==================================*/
@@ -211,8 +232,8 @@
 
     .tf__breadcrumb .container::after {
         width: 350px;
-        height: 435px;
-        top: -28px;
+        height: 360px;
+        top: -40px;
     }
 
     .tf__about_2_img .tf__about_large {
@@ -511,6 +532,14 @@
         right: 85%;
     }
 
+    .tf__faq_page::after {
+        top: 150px;
+    }
+
+    .tf__faq_page::before {
+        right: 90%;
+    }
+
     .tf__activities_text p {
         max-width: 100%;
     }
@@ -580,7 +609,7 @@
 
     .tf__breadcrumb .container::after {
         width: 350px;
-        height: 435px;
+        height: 360px;
         top: -28px;
     }
 
@@ -1261,7 +1290,7 @@
 
     .tf__breadcrumb .container::after {
         width: 280px;
-        height: 350px;
+        height: 290px;
         top: -20px;
     }
 
@@ -1713,6 +1742,10 @@
     /*==================================
         HOME PAGE 3 END
     ==================================*/
+
+    .tf__pricacy_policy {
+        margin-bottom: -25px;
+    }
 }
 
 @media (min-width: 576px) and (max-width: 767.99px) {
@@ -2035,8 +2068,8 @@
 
     .tf__breadcrumb .container::after {
         width: 180px;
-        height: 225px;
-        top: -21px;
+        height: 185px;
+        top: -20px;
     }
 
     .tf__about_2_img .tf__about_large {
@@ -2558,6 +2591,10 @@
     /*==================================
         HOME PAGE 3 END
     ==================================*/
+
+    .tf__pricacy_policy {
+        margin-bottom: -25px;
+    }
 }
 
 @media (max-width: 575.99px) {
@@ -2967,7 +3004,7 @@
 
     .tf__breadcrumb .container::after {
         width: 100px;
-        height: 125px;
+        height: 105px;
         top: 45px;
     }
 
@@ -3624,4 +3661,32 @@
     /*==================================
         HOME PAGE 3 END
     ==================================*/
+
+
+    /*==================================
+        LOGIN START
+    ==================================*/
+    .tf__login_area {
+        padding: 25px;
+    }
+
+    .tf__login_area h2 {
+        font-size: 23px;
+    }
+
+    .tf__login_area .form-check label {
+        font-size: 14px;
+    }
+
+    .tf__login_imput a {
+        font-size: 14px;
+    }
+
+    /*==================================
+        LOGIN END
+    ==================================*/
+
+    .tf__pricacy_policy {
+        margin-bottom: -25px;
+    }
 }

@@ -1,13 +1,13 @@
 /* 
 ***************************************
-Template Name: Eduor || Online Education (15 Page) Learning HTML Template
-Author: ThemeAction 
-Author Email: codecanion@gmail.com
+Template Name: Eduor || Online Education Learning HTML Template
+Author: themefaxbd 
+Author Email: themefaxbd@gmail.com
 Version: 1.0
 Description: Eduor is a Online Education HTML Template. It is designed for online education learning you are a you can discover many new awesome features in this template. Best for e-Learning, online courses, Online academy, Online Institute, Online School, College, University, and Online Instructor Websites. It fits perfectly on various displays and resolutions from regular desktop screens to tablets, iPads, iPhones and small mobile devices.
 ***************************************
 
-Table of content (css)
+CSS INDEX
 ===================================
 01. GLOBAL CSS 
 02. HOME PAGE (index.html)
@@ -25,6 +25,8 @@ Table of content (css)
 14. SERVICES PAGE
 15. TEAM DETAILS PAGE
 16. TEAM PAGE
+17. SIGN IN
+18. PRIVACY POLICY
 */
 
 /*==================================
@@ -333,9 +335,10 @@ button {
     background-repeat: no-repeat;
     background-position: center;
     width: 500px;
-    height: 615px;
-    top: -120px;
+    height: 515px;
+    top: -125px;
     right: 0;
+    z-index: 1;
 }
 
 .tf__breadcrumb_text h2 {
@@ -1229,6 +1232,9 @@ button {
 /*----- EVENT START-----*/
 .tf__single_event {
     background: var(--colorWhite);
+    border: 1px solid #ddd;
+    overflow: hidden;
+    border-radius: 5px;
     margin-top: 25px;
     transition: all linear .3s;
     -webkit-transition: all linear .3s;
@@ -1307,7 +1313,7 @@ button {
 
 .tf__single_event_text {
     padding: 15px 30px 20px 30px;
-    border: 1px solid #ddd;
+    /* border: 1px solid #ddd; */
     overflow: hidden;
     border-top: 0;
     transition: all linear .3s;
@@ -1675,6 +1681,14 @@ button {
     left: auto;
     right: 7%;
     bottom: 115px;
+}
+
+.tf__faq_page .container::after {
+    display: none;
+}
+
+.tf__faq_page .tf__faq_accordion .accordion-item {
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 
 /*----- FAQ END-----*/
@@ -2073,8 +2087,10 @@ button {
 
 /*----- BLOG START-----*/
 .tf__single_blog {
-    padding: 10px;
+    /* padding: 10px; */
     border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
     margin-top: 25px;
     transition: all linear .3s;
     -webkit-transition: all linear .3s;
@@ -2098,7 +2114,7 @@ button {
 }
 
 .tf__single_blog_text {
-    padding: 30px 20px 20px 20px;
+    padding: 30px 25px 25px 25px;
 }
 
 .tf__single_blog_text .category {
@@ -2535,6 +2551,8 @@ button {
     border-radius: 70px;
     max-width: 900px;
     margin: 0 auto;
+    position: relative;
+    z-index: 1;
 }
 
 .tf__about_us_counter p {
@@ -2542,6 +2560,10 @@ button {
     font-weight: 500;
     text-transform: uppercase;
     color: var(--colorBlack);
+}
+
+.about_3 .tf__about_us_counter p span {
+    color: var(--colorGreen);
 }
 
 .tf__about_us_counter p span {
@@ -2670,21 +2692,7 @@ button {
 }
 
 .tf__popular_service_single a {
-    position: relative;
-    z-index: 1;
-    width: 50px;
-    height: 50px;
-    line-height: 50px;
-    text-align: center;
-    display: block;
-    margin: 0 auto;
-    background: var(--colorWhite);
-    border-radius: 50%;
-    color: var(--colorBlack);
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    -ms-border-radius: 50%;
-    -o-border-radius: 50%;
+    display: none;
 }
 
 .tf__popular_service_single.red span {
@@ -2786,6 +2794,8 @@ button {
 .tf__single_courses {
     margin-top: 25px;
     border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
     transition: all linear .3s;
     -webkit-transition: all linear .3s;
     -moz-transition: all linear .3s;
@@ -2797,7 +2807,7 @@ button {
     height: 280px;
     position: relative;
     overflow: hidden;
-    margin: 10px;
+    margin-bottom: 10px;
 }
 
 .tf__single_courses_img img {
@@ -2884,7 +2894,7 @@ button {
 }
 
 .tf__single_courses_text {
-    padding: 15px 30px 30px 30px;
+    padding: 15px 25px 25px 25px;
 }
 
 .tf__single_courses_text .title {
@@ -3524,10 +3534,6 @@ button {
     margin-bottom: 25px;
 }
 
-.tf__contact_form form button {
-    margin-top: 20px;
-}
-
 .tf__contact_text {
     border: 1px solid #ddd;
     border-radius: 20px;
@@ -3915,13 +3921,13 @@ button {
     EVENT DETAILS PAGE START
 ==================================*/
 .tf__event_details_img {
-    height: 500px;
-    border-radius: 50px;
+    height: 600px;
+    border-radius: 20px;
     overflow: hidden;
-    -webkit-border-radius: 50px;
-    -moz-border-radius: 50px;
-    -ms-border-radius: 50px;
-    -o-border-radius: 50px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
 }
 
 .tf__event_details_text {
@@ -3976,16 +3982,15 @@ button {
     height: 570px;
     margin-top: 50px;
     margin-bottom: 30px;
-    border-radius: 50px;
+    border-radius: 20px;
     overflow: hidden;
-    -webkit-border-radius: 50px;
-    -moz-border-radius: 50px;
-    -ms-border-radius: 50px;
-    -o-border-radius: 50px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
 }
 
 .tf__event_det_center_text {
-    /* margin-top: 50px; */
     max-width: 80%;
     height: 100%;
     display: flex;
@@ -4508,7 +4513,7 @@ button {
 }
 
 .tf__upcoming_event .tf__single_event_img {
-    overflow: inherit;
+    overflow: initial;
 }
 
 .tf__upcoming_event .event_category {
@@ -4688,6 +4693,12 @@ button {
     margin-right: 12px;
 }
 
+.tf__team_2 .tf__single_team .title:hover {
+    color: var(--colorBlue);
+}
+
+
+
 .tf__team_3::before,
 .tf__team_2::before {
     position: absolute;
@@ -4758,7 +4769,7 @@ button {
 
 .tf__single_blog_2_img {
     width: 50%;
-    height: 290px;
+    height: 283px;
     overflow: hidden;
 }
 
@@ -5297,7 +5308,10 @@ button {
     background-repeat: no-repeat !important;
     background-size: cover !important;
     position: relative;
-    /* top: -295px; */
+}
+
+.tf__team_3 .tf__single_team .title:hover {
+    color: var(--colorGreen);
 }
 
 .tf__team_3 .tf__single_team:hover {
@@ -5694,20 +5708,7 @@ button {
 }
 
 .tf__single_services a {
-    width: 50px;
-    height: 50px;
-    line-height: 50px;
-    text-align: center;
-    background: var(--colorWhite);
-    border-radius: 50%;
-    color: var(--colorPrimary);
-    margin-top: 27px;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    -ms-border-radius: 50%;
-    -o-border-radius: 50%;
-    position: relative;
-    z-index: 1;
+    display: none;
 }
 
 .tf__single_services:hover::after {
@@ -5975,7 +5976,7 @@ button {
 .tf__single_team {
     border: 1px solid #ddd;
     padding: 10px;
-    border-radius: 50px;
+    border-radius: 20px;
     overflow: hidden;
     margin-top: 25px;
     background: var(--colorWhite);
@@ -5984,13 +5985,21 @@ button {
     -moz-transition: all linear .3s;
     -ms-transition: all linear .3s;
     -o-transition: all linear .3s;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
 }
 
 .tf__single_team_img {
     height: 370px;
-    border-radius: 40px;
+    border-radius: 20px;
     overflow: hidden;
     position: relative;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
 }
 
 .tf__single_team_img ul {
@@ -6092,3 +6101,221 @@ button {
 /*==================================
     TEAM PAGE END
 ==================================*/
+
+
+/* ==================================
+    SIGN IN START
+=================================== */
+.tf__login_area {
+    background: rgb(233, 247, 250);
+    padding: 50px;
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+.tf__login_area h2 {
+    font-weight: 700;
+    font-size: 35px;
+    color: var(--colorBlack);
+    text-transform: capitalize;
+    margin-bottom: 5px;
+}
+
+.tf__login_area p {
+    color: var(--colorBlack);
+    text-transform: capitalize;
+    margin-bottom: 25px;
+}
+
+.tf__login_area .tf__login_imput {
+    margin-bottom: 20px;
+}
+
+.tf__login_area form label {
+    text-transform: capitalize;
+    font-size: 15px;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.tf__login_area form button {
+    width: 100%;
+    border-radius: 3px;
+    text-align: center;
+}
+
+.tf__login_check_area {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tf__login_area .form-check input {
+    padding: 0px;
+    border-radius: 3px;
+}
+
+.tf__login_area .form-check input:checked {
+    background-color: var(--colorPrimary);
+    border-color: var(--colorPrimary);
+}
+
+.form-check-input:focus {
+    border-color: var(--colorPrimary);
+    box-shadow: none;
+}
+
+.tf__login_area .form-check label {
+    color: var(--paraColor);
+    margin: 0px;
+    text-transform: capitalize;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.tf__login_imput a {
+    text-transform: capitalize;
+    font-size: 16px;
+    font-weight: 400;
+    color: red;
+    transition: all 0.3s linear 0s;
+    -webkit-transition: all 0.3s linear 0s;
+    -moz-transition: all 0.3s linear 0s;
+    -ms-transition: all 0.3s linear 0s;
+    -o-transition: all 0.3s linear 0s;
+}
+
+.tf__login_imput a:hover {
+    color: var(--colorBlack);
+}
+
+.tf__login_area .or {
+    position: relative;
+    margin: 20px 0px 40px;
+}
+
+.tf__login_area .or span {
+    text-transform: uppercase;
+    width: 25px;
+    height: 25px;
+    display: inline-block;
+    background: var(--colorPrimary);
+    font-size: 13px;
+    text-align: center;
+    line-height: 27px;
+    color: var(--colorWhite);
+    border-radius: 3px;
+    position: relative;
+    z-index: 1;
+}
+
+.tf__login_area .or::after {
+    position: absolute;
+    content: "";
+    background: var(--colorPrimary);
+    width: 98%;
+    height: 1px;
+    top: 50%;
+    right: 0px;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+}
+
+.tf__login_area ul li a {
+    width: 35px;
+    height: 35px;
+    background: var(--colorPrimary);
+    color: var(--colorWhite);
+    text-align: center;
+    line-height: 35px;
+    border-radius: 50%;
+    margin-right: 5px;
+    font-size: 14px;
+    border: 1px solid transparent;
+    transition: all 0.3s linear 0s;
+    -webkit-transition: all 0.3s linear 0s;
+    -moz-transition: all 0.3s linear 0s;
+    -ms-transition: all 0.3s linear 0s;
+    -o-transition: all 0.3s linear 0s;
+}
+
+.tf__login_area ul li a:hover {
+    border-color: var(--colorPrimary);
+    color: var(--colorPrimary);
+    background: var(--colorWhite);
+}
+
+.tf__login_area .create_account {
+    margin-top: 30px;
+    color: var(--paraColor);
+    margin-bottom: 0px;
+}
+
+.tf__login_area .create_account a {
+    color: var(--colorPrimary);
+    text-transform: capitalize;
+    font-weight: 500;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+
+.tf__login_area .create_account a:hover {
+    color: var(--colorBlack);
+}
+
+/* ==================================
+    SIGN IN END
+=================================== */
+
+
+/* ==================================
+    PRIVACY POLICY START
+=================================== */
+.tf__pricacy_policy {
+    margin-bottom: -20px;
+}
+
+.tf__pricacy_policy_text h3 {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.tf__pricacy_policy_text p {
+    margin-bottom: 20px;
+}
+
+.tf__pricacy_policy_text ul {
+    margin-bottom: 20px;
+    margin-left: 15px;
+}
+
+.tf__pricacy_policy_text ul li {
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--paraColor);
+    margin-bottom: 5px;
+    padding-left: 20px;
+    position: relative;
+}
+
+.tf__pricacy_policy_text ul li::after {
+    position: absolute;
+    content: "";
+    width: 8px;
+    height: 8px;
+    background: var(--colorBlack);
+    top: 8px;
+    left: 0px;
+    border-radius: 50%;
+}
+
+/* ==================================
+    PRIVACY POLICY END
+=================================== */
